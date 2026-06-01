@@ -1,0 +1,4 @@
+# Pins the shipping omena artifacts these examples target.
+# Generated from the omena-css monorepo — do not hand-edit. Placeholder until first publish.
+vsix = "5.2.0"
+crates_train = "0.2.0"
