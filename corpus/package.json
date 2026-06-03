@@ -1,0 +1,12 @@
+{
+  "name": "@omena/corpus",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Checker regression corpora COPIED (graduated) from the omena-css monorepo: integration-errors (CLI --preset ci oracles) + golden (contract-parity *-parity.json goldens). Data only; the monorepo originals remain the live-test source.",
+  "scripts": {
+    "build": "node check-corpus.mjs",
+    "test": "node check-corpus.mjs",
+    "check:corpus": "node check-corpus.mjs"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@omena/lsp-e2e",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Generalized LSP regression for omena-css. Drives the omena LSP Rust binary (omena-lsp-server) over a pure stdio harness against onboarding scenarios in @omena/examples, with a declarative per-scenario expectation table. Targets ONLY the Rust binary, not the legacy Node server.",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx src/run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

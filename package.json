@@ -1,27 +1,19 @@
 {
-  "name": "@omena/examples",
+  "name": "@omena/examples-workspace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "description": "Single-app dogfood sandbox for omena-css. Each scenario is a React component that exercises one cx() pattern. Not shipped in the marketplace VSIX.",
+  "description": "omena examples + corpus + lsp-e2e turborepo. Onboarding sandbox, checker fixtures, and Rust-LSP regression for omena-css, pinned to a shipping product version via .omena-version.",
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "dev": "vp dev",
-    "build": "vp build",
-    "preview": "vp preview"
-  },
-  "dependencies": {
-    "classnames": "^2.5.1",
-    "clsx": "^2.1.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "gen:version": "node runner/gen-omena-version.mjs",
+    "check:version": "node runner/check-omena-version.mjs"
   },
   "devDependencies": {
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^6.0.1",
-    "less": "^4.4.2",
-    "sass": "^1.99.0",
-    "vite": "^8.0.8",
-    "vite-plus": "^0.1.16"
+    "turbo": "^2.9.16"
   }
 }

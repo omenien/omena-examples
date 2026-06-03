@@ -1,4 +1,10 @@
 # Pins the shipping omena artifacts these examples target.
-# Generated from the omena-css monorepo — do not hand-edit. Placeholder until first publish.
+# GENERATED / CHECKED, not hand-edited (runner/gen-omena-version.mjs + check-omena-version.mjs).
+# PRIMARY   = vsix         : the end-user VSIX product version (omena-css root package.json "version").
+# SECONDARY = crates_train : the crates.io train version. Under the now-live Model A direct-publish,
+#                            the train version EQUALS the monorepo workspace version
+#                            (rust/Cargo.toml [workspace.package].version), so it tracks that single source.
+# The two axes are documented together but may move independently in principle.
+# Bump-on-RELEASE, never on corpus growth: adding an example does NOT re-pin this file.
 vsix = "5.2.0"
 crates_train = "0.2.0"
